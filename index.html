@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <title>Sceut 香水介紹頁</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Noto+Sans+TC&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #fffaf7;
+      font-family: 'Noto Sans TC', sans-serif;
+      color: #4a4a4a;
+      line-height: 1.8;
+    }
+
+    .container {
+      max-width: 750px;
+      margin: 0 auto;
+      padding: 50px 20px;
+    }
+
+    h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 28px;
+      color: #b07667;
+      margin-bottom: 20px;
+    }
+
+    .section {
+      background-color: #ffffff;
+      border-radius: 16px;
+      padding: 30px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      margin-bottom: 40px;
+    }
+
+    ul {
+      list-style: disc;
+      margin-left: 20px;
+    }
+
+    a {
+      color: #b07667;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* LOGO區 */
+    .logo-section {
+      text-align: center;
+    }
+
+    .logo-section img {
+      max-width: 160px;
+      margin-bottom: 15px;
+    }
+
+    .carousel {
+      position: relative;
+      overflow: hidden;
+      border-radius: 16px;
+    }
+
+    .carousel-track {
+      display: flex;
+      transition: transform 0.5s ease;
+    }
+
+    .carousel-track img {
+      width: 100%;
+      height: auto;
+      flex-shrink: 0;
+      object-fit: cover;
+    }
+
+    .carousel-buttons {
+      text-align: center;
+      margin-top: 10px;
+    }
+
+    .carousel-buttons button {
+      background-color: #f0e3dc;
+      color: #333;
+      border: none;
+      padding: 8px 14px;
+      margin: 0 6px;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .carousel-buttons button:hover {
+      background-color: #e4d0c8;
+    }
+
+    /* Instagram */
+    .insta {
+      font-size: 1.1em;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <!-- LOGO 區塊 -->
+    <section class="section logo-section" id="logo">
+      <img src="sceutlogo.png" alt="Sceut Logo">
+      <h2>Sceut</h2>
+      <p>香氣，從這裡開始。</p>
+    </section>
+
+    <!-- 香水照片展示區 -->
+    <section class="section" id="gallery">
+      <h2>香水照片展示區</h2>
+      <div class="carousel">
+        <div class="carousel-track" id="carouselTrack">
+          <img src="Les.jpg" alt="香水1">==$0
+      
+        </div>
+
+    </section>
+
+    
+
+    <!-- 香水介紹 -->
+    <section class="section" id="fragrance">
+      <h2>香水介紹</h2>
+      <ul>
+        <li><strong>Top Notes:</strong> 蘋果、苦橙、綠柑橘</li>
+        <li><strong>Middle Notes:</strong> 玫瑰、雪松、野莓</li>
+        <li><strong>Base Notes:</strong> 檀香木、麝香、阿基加香</li>
+      </ul>
+      <p>靈感來自「垃圾中的花」。象徵重生與永續之美，以回收的原料製作。蘋果、玫瑰、雪松融合出一種既清新又性感的香氣，表現自然循環的詩意。</p>
+    </section>
+
+    <!-- 品牌介紹 -->
+    <section class="section" id="brand">
+      <h2>品牌介紹</h2>成立於2006年的法國巴黎，是以大膽、顛覆與幽默聞名的小眾香水品牌。品牌名意為「自由之橙邦」，以挑戰傳統香水觀念為核心。每支香水都帶有強烈概念性與故事性，如《Fat Electrician》、《You Or Someone Like You》等，結合藝術與反叛精神。
+</p>
+    </section>
+
+    <!-- IG 區塊 -->
+    <section class="section" id="social">
+      <h2>追蹤我們</h2>
+      <p class="insta">Follow us on Instagram: <a href="https://www.instagram.com/sceut_tw" target="_blank">@sceut_tw</a></p>
+    </section>
+
+    <!-- 回饋表單 -->
+    <section class="section" id="feedback">
+      <h2>回饋我們</h2>
+      <p>若您有任何建議或心得，歡迎至訂單系統中回饋，讓 Sceut 更加貼近您的感受。</p>
+    </section>
+
+  </div>
+
+  <script>
+    let currentSlide = 0;
+    function moveSlide(step) {
+      const track = document.getElementById('carouselTrack');
+      const totalSlides = track.children.length;
+      currentSlide = (currentSlide + step + totalSlides) % totalSlides;
+      track.style.transform = `translateX(-${currentSlide * 100}%)`;
+    }
+  </script>
+</body>
+</html>
+
+
+  </script>
+</body>
+</html>
